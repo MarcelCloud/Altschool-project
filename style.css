@@ -1,140 +1,241 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,200;1,700&family=Rubik+80s+Fade&display=swap");
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-  
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Lato:ital,wght@0,300;0,400;0,700;1,900&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.container{
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Lato" sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+.container {
+    
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+
+.nav {
+    padding: 2rem 3rem;
     display: flex;
-    height: 90vh;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E0E6EA;
 }
-.home{
-    margin-top: 20%;
-    margin-left: 12%;
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    font-size: 1.5rem;
+    color: #1D2C3C;
+    font-weight: 700;
+    font-style: normal;
 
 }
-.home p{
-   text-align: left;
-   justify-content: center;
-   width: 70%;
-   font-size: 15px;
 
-}
-.text-container{
+.links {
     display: flex;
-    flex-direction: row;
-    padding: 25%;
-    margin-right: 50px;
+    justify-content: space-between;
+    gap: 3rem;
+    
 }
-.individual-form{
-    margin-top: 170px;
-    max-width: 700px;
-    width: 100%;
-    margin-right: 40px;
-    background-color:#ffff;
-    border: 2px solid whitesmoke;
-    padding: 5% 5%;
-    border-radius: 5px;
+
+.links li {
+    list-style: none;
 }
-.individual-form form .user-details{
+
+.links li a {
+    text-decoration: none;
+    color: #1D2C3C;
+}
+
+.links li a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.btn-top {
+    border: 2px solid #646E7A;;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.btn-top:hover {
+    background-color: red;
+    color: #fff;
+}
+
+.main {
+    margin: 5rem 20rem;
+    background-color: red;
+    border-radius: 0.375rem;
+    background: #FFF;
+
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05), 0px 15px 35px 0px rgba(43, 64, 78, 0.10);
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
-form .user-details .input-box{
-    margin-bottom: 15px;
-    width: calc(100% / 2 - 20px);
-    
-    
-}
-.user-details .input-box details{
-    display: block;
-    font-weight: 500;
-    padding: 1%;
-    
+
+.right {
+    width: 70%;
+    padding: 3rem;
 }
 
+.heading {
+    color: #1D2C3C;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
-.input-box select{
-    display: block;
-    font-weight: 500;
-     margin-bottom: 5px;
-     width: 105%;
-     padding: 15px;
-     border-radius: 5px;
-     border: white;
-     
+.details {
+    margin-top: 3rem;
 }
-.user-details .input-box input{
-    height: 45px;
-    width: 100%;
-    outline: none;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    padding-left: 15px;
-    font-size: 15px;
-    margin-bottom: 10px;
-}
-.details{
-    font-size: 12px;
-    font-weight: bolder;
-    padding: 10px;
-}
-.activity select{
-    display: block;
-    font-weight: 500;
-     margin-bottom: 25px;
-     width: 330%;
-     padding: 15px;
-     border-radius: 5px;
-     outline: none;
-     border: none;
-     
-}
- .user-details .password-field {
+
+.sub-details {
     display: flex;
-    font-weight: 500;
-    margin-bottom: 5px;
-}
-.password-field{
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
+    gap: 1rem;
+    align-items: center;
 }
 
-.password-field .passs{
+.numbers {
+    border: 1px solid #1D2C3C;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.sub-details p {
+    color: #1D2C3C;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.01rem;
+}
+.input-details {
+    display: flex;
+    gap: 3rem;
+    /* flex-wrap: wrap; */
+    margin-top: 2rem;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+
+.input label {
+    color: #1D2C3C;
+    font-family: Lato;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.input input {
+    width: 30rem;
+    height: 2.25rem;
+    border-radius: 0.25rem;
+    background: #EDEFF2;
+    padding: 2rem;
+    border: none;
+}
+
+.out {
+    margin-top: 1rem;
+}
+
+
+.card input {
+    width: 50rem;
+}
+
+.card ::placeholder {
+    display: flex;
+    gap: 4rem;
+
+}
+
+.btn-sub {
+    margin: 5rem;
+    padding: 2rem 3rem ;
+    border-radius: 0.3125rem;
+    background: #038E7D;
+    color: #FFF;
     text-align: center;
-    display: block;
+    font-family: Lato;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.02475rem;
 }
-
- #pass{
-  width: 315%;
-  border: none;
-  padding: 15px;
-  margin-bottom: 25px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-   
-} 
-#toggler{
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translate(-50%);
-    cursor: pointer;
-} 
-button{
-    width: 103%;
-    padding: 15px;
+.left {
+    width: 30%;
+    background-color: #1179BF;
+    padding: 3rem;
+}
+.number{
+    border: 1px solid #1D2C3C;
+    border-radius: 48%;
+    padding: 6px;
+    margin-left: 200px;
+    height: 3vh;
+}
+.sub{
+    background-color: gray;
+    width: 13%;
+    padding: 2px;
+    font-size: 16px;
+    margin-left: 370px;
     border-radius: 5px;
-    background-color: #2EC4B6;
-    outline: none;
-    border: white;
+    opacity: 0.7;
+}
+.client-side{
+    margin-top: 25px;
+}
+.client{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    color: white;
+    
+}
+.numb{
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 8px;
+    margin-bottom: 7px;
+
+}
+.client h4{
     color: white;
 }
-#Policy {
-    margin-left: 20px;
-    text-align: center;
+.client p{
+    font-size: 16px;
+}
+.nam{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.nam h3{
+    font-size: 16px;
+    color: white;
+    margin-left: 10px;
 }
