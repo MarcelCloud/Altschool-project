@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,200;1,700&family=Rubik+80s+Fade&display=swap");
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+  
+}
+
+.container{
+    display: flex;
+    height: 90vh;
+}
+.home{
+    margin-top: 20%;
+    margin-left: 12%;
+
+}
+.home p{
+   text-align: left;
+   justify-content: center;
+   width: 70%;
+   font-size: 15px;
+
+}
+.text-container{
+    display: flex;
+    flex-direction: row;
+    padding: 25%;
+    margin-right: 50px;
+}
+.individual-form{
+    margin-top: 170px;
+    max-width: 700px;
+    width: 100%;
+    margin-right: 40px;
+    background-color:#ffff;
+    border: 2px solid whitesmoke;
+    padding: 5% 5%;
+    border-radius: 5px;
+}
+.individual-form form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+    
+    
+}
+.user-details .input-box details{
+    display: block;
+    font-weight: 500;
+    padding: 1%;
+    
+}
+
+
+.input-box select{
+    display: block;
+    font-weight: 500;
+     margin-bottom: 5px;
+     width: 105%;
+     padding: 15px;
+     border-radius: 5px;
+     border: white;
+     
+}
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.details{
+    font-size: 12px;
+    font-weight: bolder;
+    padding: 10px;
+}
+.activity select{
+    display: block;
+    font-weight: 500;
+     margin-bottom: 25px;
+     width: 330%;
+     padding: 15px;
+     border-radius: 5px;
+     outline: none;
+     border: none;
+     
+}
+ .user-details .password-field {
+    display: flex;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.password-field{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.password-field .passs{
+    text-align: center;
+    display: block;
+}
+
+ #pass{
+  width: 315%;
+  border: none;
+  padding: 15px;
+  margin-bottom: 25px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+   
+} 
+#toggler{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+} 
+button{
+    width: 103%;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #2EC4B6;
+    outline: none;
+    border: white;
+    color: white;
+}
+#Policy {
+    margin-left: 20px;
+    text-align: center;
+}
